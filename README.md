@@ -23,8 +23,7 @@
 
 ## 接入池子
 下载二进制文件:  
-`wget -O jlaleo-v0.0.1.tar.gz  https://github.com/jilingtech/client/releases/download/v1.0.1/jlaleo-v0.0.1.tar.gz
-`
+`wget -O jlaleo-v0.0.1.tar.gz  https://github.com/jilingtech/client/releases/download/v1.0.1/jlaleo-v0.0.1.tar.gz`  
 提取文件:  
 `tar -zxvf jlaleo-v0.0.1.tar.gz `  
 接入命令：  
