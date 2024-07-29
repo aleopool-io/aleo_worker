@@ -1,37 +1,43 @@
-# aleopool aleo_worker
-##  介绍
-- 矿池挖矿
-- 挖矿前准
-- 接入池子
-## 矿池挖矿
-您需要在矿池 (http://8.218.31.102:8080/register) 注册一个账户账户，同时还需要进行以下操作：
+# Aleopool aleo_worker
+##  INTRODUCTION
+- Aleopool pool mining
+- Pre mining preparation
+- Access Aleopool Pool
+## Aleopool pool mining
+You can either register an account on http://8.218.31.102:8080/register ，at the same time, the following operations need to be performed：
 #### 
                 
-1. 设置谷歌验证
-2. 查找account与设置收益地址  
-    account：登录账号->点击右上角账号->设置   
-    地址设置：登录账号->点击右上角账号->设置->安全设置->谷歌验证的开放->挖矿账户->设置(付款设置下)         
-    Aleo钱包可以在 tools.aleo1.to 或aleo.tools上生成。
-## 挖矿前准备
-挖矿设备：GPU（NVIDIA显卡，显存不低于6GB，显卡驱动版本550或以上）。推荐每个GPU配备8核CPU（如2个GPU则配备16核CPU），以及8G内存（2个GPU则配备16G内存），128G固态硬盘。
+1. Google authentication
+    login->account->Settings->Security settings->Google authentication
+2. look for account and settings address
+    account：login->account->Settings->Mining account   
+    Settings address：login->account->Settings->Mining account-> Settings/Modify         
+    Aleo wallet can be generated at tools.aleo1.to or aleo.tools
+## Pre mining preparation
+Mining equipment: GPU (NVIDIA graphics card, graphics memory not less than 6GB, graphics card driver version 550 or above). It is recommended to equip each GPU with an 8-core CPU (16 cores for 2 GPUs), 8GB of memory (16GB for 2 GPUs), and a 128GB solid-state drive.
 
-操作系统：安装系统版本Ubuntu 22.04，server版，不带GUI组件。  
+Operating system: Install system version Ubuntu 22.04, server version, without GUI components.
 
-需要 Nvidia 525 驱动程序和 CUDA 12 才能获得最佳性能。
-您可以在此处找到说明：https://developer.nvidia.com/cuda-downloads  
-矿工 GPU 负载过重 - 检查您的电源单元和 PL 设置。矿工启动后 - 在前 30-60 分钟内观察 GPU 和 CPU 的温度。如果过热 - 降低 PL，调整 OC。
+Nvidia 525 drivers and CUDA 12 required for best performance.
+You can find instructions here: https://developer.nvidia.com/cuda-downloads
+Miner load GPU heavily - check your power unit and PL settings.                                                                After miner starts - watch for temperature of GPU and CPU during first 30-60 minutes. In case of overheating - lower PL, tune OC.
 
-## 接入池子
-下载二进制文件:  
-`wget -O jlaleo-v0.0.1.tar.gz  https://github.com/jilingtech/client/releases/download/v1.0.1/jlaleo-v0.0.1.tar.gz`  
-提取文件:  
-`tar -zxvf jlaleo-v0.0.1.tar.gz `  
-接入命令：  
-`./jl-aleo-prover  --url ws://116.117.158.178:18888/v1/api/client/ws --account 55138c1ab035b540  --worker worker1 --threads 95`  
+## Access Aleopool Pool
+Download binaries:  
+
+```wget -O jlaleo-v0.0.1.tar.gz  https://github.com/jilingtech/client/releases/download/v1.0.1/jlaleo-v0.0.1.tar.gz```  
+
+Extract files for client: 
+
+```tar -zxvf jlaleo-v0.0.1.tar.gz ```  
+
+Usage：  
+
+```./jl-aleo-prover  --url ws://116.117.158.178:18888/v1/api/client/ws --account 55138c1ab035b540  --worker worker1 --threads 95 ```   
 ```
---account - 账号ID  
---url - pool地址  
---worker - 矿工名称  
---threads - 线程数
+--account -account ID  
+--url     -pool address  
+--worker  -workername  
+--threads -threads
 ```
 
