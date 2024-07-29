@@ -7,9 +7,9 @@
 You can either register an account on http://8.218.31.102:8080/register ，at the same time, the following operations need to be performed：
 #### 
                 
-1. Google authentication
+1. Google authentication  
     login->account->Settings->Security settings->Google authentication
-2. look for account and settings address
+2. look for account and settings address  
     account：login->account->Settings->Mining account   
     Settings address：login->account->Settings->Mining account-> Settings/Modify         
     Aleo wallet can be generated at tools.aleo1.to or aleo.tools
