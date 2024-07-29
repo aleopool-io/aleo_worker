@@ -25,11 +25,11 @@ Miner load GPU heavily - check your power unit and PL settings.                 
 ## Access Aleopool Pool
 Download binaries:  
 
-```wget -O jlaleo-v0.0.1.tar.gz  https://github.com/aleopool-io/aleo_worker/releases/download/v1.0.0/jlaleopool.v1.0.0.tar.gz```  
+```wget -O jlaleo-v0.1.1.tar.gz  https://github.com/aleopool-io/aleo_worker/releases/download/v0.1.1/jlaleopool.v0.1.1.tar.gz```  
 
 Extract files for client: 
 
-```tar -zxvf jlaleo-v0.0.1.tar.gz ```  
+```tar -zxvf jlaleo-v0.1.1.tar.gz ```  
 
 Usage：  
 
